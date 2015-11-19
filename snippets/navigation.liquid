@@ -1,0 +1,142 @@
+<div id="navigation" class="clearfix">
+
+	<div class="page-width clearfix">
+        <ul id="main-nav" class="clearfix">
+{% comment %}
+Remove search form
+
+		<li class="show-mobile mobile-search">
+            <form method="get" action="/search">
+                <div class="input-wrap">
+                    <label for="search-input1">{{ 'general.search.label' | t }}</label>
+                    <input type="text" placeholder="{{ 'general.search.placeholder' | t }}" name="q" class="search-input" id="search-input1">
+                </div>
+                <button class="button" value="" name="search-button" type="submit">{{ 'general.search.submit' | t }}</button>
+            </form>
+		</li>
+ {% endcomment %}
+
+
+
+		{% if shop.customer_accounts_enabled %}
+			{% if customer %}
+				<li class="show-mobile cust-account">
+					<a href="/account">{{ 'layout.customer.my_account' | t }}</a>
+				</li>
+				<li class="show-mobile cust-account">
+					<a href="/account/logout">{{ 'layout.customer.log_out' | t }}</a>
+				</li>
+			{% else %}
+				<li class="show-mobile cust-account">
+					<a href="/account/login">{{ 'layout.customer.log_in' | t }}</a>
+				</li>
+				{% if shop.customer_accounts_optional %}
+					<li class="show-mobile cust-account">
+						<a href="/account/register">{{ 'layout.customer.create_account' | t }}</a>
+					</li>
+				{% endif %}
+			{% endif%}
+		{% endif %}
+
+
+
+
+        {% for link in linklists[settings.nav_linklist].links %}
+			{% capture show_menu1 %}sub_{{forloop.index}}_1_show{% endcapture %}
+			{% capture sub_menu1 %}sub_{{forloop.index}}_1_heading{% endcapture %}
+			{% capture sub_menu1_link %}sub_{{forloop.index}}_1_linklist{% endcapture %}
+			{% capture sub_menu1_linklist %}{{settings[sub_menu1_link] }}{% endcapture %}
+
+			{% capture show_menu2 %}sub_{{forloop.index}}_2_show{% endcapture %}
+			{% capture sub_menu2 %}sub_{{forloop.index}}_2_heading{% endcapture %}
+			{% capture sub_menu2_link %}sub_{{forloop.index}}_2_linklist{% endcapture %}
+			{% capture sub_menu2_linklist %}{{settings[sub_menu2_link] }}{% endcapture %}
+
+			{% capture show_menu3 %}sub_{{forloop.index}}_3_show{% endcapture %}
+			{% capture sub_menu3 %}sub_{{forloop.index}}_3_heading{% endcapture %}
+			{% capture sub_menu3_link %}sub_{{forloop.index}}_3_linklist{% endcapture %}
+			{% capture sub_menu3_linklist %}{{settings[sub_menu3_link] }}{% endcapture %}
+
+			{% capture show_menu4 %}sub_{{forloop.index}}_4_show{% endcapture %}
+			{% capture sub_menu4 %}sub_{{forloop.index}}_4_heading{% endcapture %}
+			{% capture sub_menu4_link %}sub_{{forloop.index}}_4_linklist{% endcapture %}
+			{% capture sub_menu4_linklist %}{{settings[sub_menu4_link] }}{% endcapture %}
+
+			{% assign subCount = 0 %}
+			{% if settings[show_menu1] %}
+				{% capture subCount %}{{ subCount | plus: 1 }}{% endcapture %}
+			{% endif %}
+			{% if settings[show_menu2] %}
+				{% capture subCount %}{{ subCount | plus: 1 }}{% endcapture %}
+			{% endif %}
+			{% if settings[show_menu3] %}
+				{% capture subCount %}{{ subCount | plus: 1 }}{% endcapture %}
+			{% endif %}
+			{% if settings[show_menu4] %}
+				{% capture subCount %}{{ subCount | plus: 1 }}{% endcapture %}
+			{% endif %}
+
+
+			<li class="subs{{subCount}} {% if forloop.first %}first{% endif %} link{{forloop.index}}{% unless subCount == 0 %} has-menu{% endunless %}">
+              <a class="{% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title | escape }}{% unless subCount == 0 %}<i></i>{% endunless %}</a>
+
+				{% if settings[show_menu1] or settings[show_menu2] or settings[show_menu3] or settings[show_menu4] %}
+              		<div class="sub-wrap">
+					<div class="sub">
+						{% if settings[show_menu1] %}
+							<ul>
+							<li><h4>{% if settings[sub_menu1] == "" %}&nbsp;{% endif %}{{settings[sub_menu1]}}</h4></li>
+								{% for link in linklists[sub_menu1_linklist].links %}
+									<li>{{ link.title | link_to: link.url }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+						{% if settings[show_menu2] %}
+							<ul>
+							<li><h4>{% if settings[sub_menu2] == "" %}&nbsp;{% endif %}{{settings[sub_menu2]}}</h4></li>
+								{% for link in linklists[sub_menu2_linklist].links %}
+									<li>{{ link.title | link_to: link.url }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+						{% if settings[show_menu3] %}
+							<ul>
+							<li><h4>{% if settings[sub_menu3] == "" %}&nbsp;{% endif %}{{settings[sub_menu3]}}</h4></li>
+								{% for link in linklists[sub_menu3_linklist].links %}
+									<li>{{ link.title | link_to: link.url }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+						{% if settings[show_menu4] %}
+							<ul>
+							<li><h4>{% if settings[sub_menu4] == "" %}&nbsp;{% endif %}{{settings[sub_menu4]}}</h4></li>
+								{% for link in linklists[sub_menu4_linklist].links %}
+									<li>{{ link.title | link_to: link.url }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+					</div>
+              </div>
+				{% endif %}
+			</li>
+		{% endfor %}
+		</ul>
+{% comment %}
+Remove search form
+      <div class="search-form" role="search">
+      <form method="get" action="/search">
+          <div class="input-wrap">
+              <label for="search-input2">{{ 'general.search.label' | t }}</label>
+              <input type="text" placeholder="{{ 'general.search.placeholder' | t }}" name="q" class="search-input" id="search-input2">
+          </div>
+          <button id="search-submit" value="" name="search-button" type="submit"><img alt="{{ 'general.search.submit' | t }}" src="{{'icon-search-dark.png' | asset_url}}"></button>
+      </form>
+      </div>
+ {% endcomment %}
+
+	</div>
+</div>

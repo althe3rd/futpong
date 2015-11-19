@@ -1,0 +1,614 @@
+[
+  {
+    "name": "Welcome",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Theme settings allow designers to provide an easy way for any user to customize the look and feel of their shop without having to delve into HTML or CSS code. Please see our [help page on theme settings](http:\/\/docs.shopify.com\/themes\/theme-templates\/settings) to learn more about how you can make your theme customizable."
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color"
+      },
+      {
+        "type": "color",
+        "id": "link_color",
+        "label": "Link color"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "select",
+        "id": "base_font_family",
+        "label": "Typeface",
+        "options": [
+          {
+            "value": "'Source Sans Pro', sans-serif",
+            "label": "Source Sans Pro",
+            "group": "Google Fonts"
+          },
+          {
+            "value": "Helvetica, Arial, sans-serif",
+            "label": "Helvetica\/Arial",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Impact, Charcoal, Helvetica, Arial, sans-serif",
+            "label": "Impact",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
+            "label": "Lucida Grande",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Trebuchet MS, sans-serif",
+            "label": "Trebuchet MS",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Verdana, Helvetica, Arial, sans-serif",
+            "label": "Verdana",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Garamond, Baskerville, Caslon, serif",
+            "label": "Garamond",
+            "group": "Serif"
+          },
+          {
+            "value": "Georgia, Utopia, 'Times New Roman', Times, serif",
+            "label": "Georgia",
+            "group": "Serif"
+          },
+          {
+            "value": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
+            "label": "Palatino",
+            "group": "Serif"
+          },
+          {
+            "value": "'Times New Roman', Times, serif",
+            "label": "Times New Roman",
+            "group": "Serif"
+          },
+          {
+            "value": "'Courier New', Courier, monospace",
+            "label": "Courier New",
+            "group": "Monospace"
+          },
+          {
+            "value": "Monaco, 'Lucida Console', 'DejaVu Sans Mono', monospace",
+            "label": "Monaco\/Lucida Console",
+            "group": "Monospace"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "base_font_size",
+        "label": "Base font size",
+        "options": [
+          {
+            "value": "13px",
+            "label": "13px"
+          },
+          {
+            "value": "14px",
+            "label": "14px"
+          },
+          {
+            "value": "15px",
+            "label": "15px"
+          },
+          {
+            "value": "16px",
+            "label": "16px"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Logo Options"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_logo",
+        "label": "Use Custom Logo?"
+      },
+      {
+        "type": "image",
+        "id": "logo.png",
+        "label": "Custom Logo",
+        "max-width": 1200,
+        "max-height": 1200
+      },
+      {
+        "type": "paragraph",
+        "content": "Recommend the optimal width and height for your logo here."
+      },
+      {
+        "type": "header",
+        "content": "Social links"
+      },
+      {
+        "type": "paragraph",
+        "content": "All links, except the email one, must begin with http:\/\/, https:\/\/ or \/\/. The email must be your email address with no mailto: prefix. Leave the text box blank if you don't want to use the corresponding icon."
+      },
+      {
+        "type": "text",
+        "id": "facebook_url",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "twitter_url",
+        "label": "Twitter URL"
+      },
+      {
+        "type": "text",
+        "id": "pinterest_url",
+        "label": "Pinterest URL"
+      },
+      {
+        "type": "text",
+        "id": "googleplus_url",
+        "label": "Google+ URL"
+      },
+      {
+        "type": "text",
+        "id": "flickr_url",
+        "label": "Flickr URL"
+      },
+      {
+        "type": "text",
+        "id": "instagram_url",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "linkedin_url",
+        "label": "Linkedin URL"
+      },
+      {
+        "type": "text",
+        "id": "vimeo_url",
+        "label": "Vimeo URL"
+      },
+      {
+        "type": "text",
+        "id": "youtube_url",
+        "label": "Youtube URL"
+      },
+      {
+        "type": "text",
+        "id": "tumblr_url",
+        "label": "Tumblr URL"
+      },
+      {
+        "type": "text",
+        "id": "wordpress_url",
+        "label": "Wordpress URL"
+      },
+      {
+        "type": "text",
+        "id": "yelp_url",
+        "label": "Yelp URL"
+      },
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "Email"
+      },
+      {
+        "type": "blog",
+        "id": "featured_blog",
+        "label": "Blog feed"
+      },
+      {
+        "type": "select",
+        "id": "social_icons_style",
+        "label": "Social icons style",
+        "options": [
+          {
+            "value": "",
+            "label": "Silhouette"
+          },
+          {
+            "value": "-circle",
+            "label": "Circle"
+          },
+          {
+            "value": "-rounded",
+            "label": "Rounded corners"
+          },
+          {
+            "value": "-square",
+            "label": "Square"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Navigation Bar",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "nav_linklist",
+        "label": "Linklist for main menu"
+      }
+    ]
+  },
+  {
+    "name": "Homepage",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "page",
+        "id": "homepage_page",
+        "label": "Show content of this page"
+      },
+      {
+        "type": "header",
+        "content": "Featured collection"
+      },
+      {
+        "type": "collection",
+        "id": "homepage_collection",
+        "label": "Feature products from this collection"
+      }
+    ]
+  },
+  {
+    "name": "Home Slideshow",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_slideshow",
+        "label": "Show Homepage Slideshow?"
+      },
+      {
+        "type": "select",
+        "id": "slideshow_speed",
+        "label": "Show slideshow images for",
+        "options": [
+          {
+            "value": "10000",
+            "label": "10 seconds"
+          },
+          {
+            "value": "9000",
+            "label": "9 seconds"
+          },
+          {
+            "value": "8000",
+            "label": "8 seconds"
+          },
+          {
+            "value": "7000",
+            "label": "7 seconds"
+          },
+          {
+            "value": "6000",
+            "label": "6 seconds"
+          },
+          {
+            "value": "5000",
+            "label": "5 seconds"
+          },
+          {
+            "value": "4000",
+            "label": "4 seconds"
+          },
+          {
+            "value": "3000",
+            "label": "3 seconds"
+          },
+          {
+            "value": "2000",
+            "label": "2 seconds"
+          }
+        ],
+        "default": "7000"
+      },
+      {
+        "type": "checkbox",
+        "id": "auto_scroll",
+        "label": "Autoplay slideshow?"
+      },
+      {
+        "type": "color",
+        "id": "home_slideshow_bg",
+        "label": "Slideshow Background",
+        "default": "#F7F7F7"
+      },
+      {
+        "type": "checkbox",
+        "id": "slideshow_bg_trans",
+        "label": "Make Slideshow Background Transparent?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Suggested width for slides is 1200px. For best results, try to make your slides all the same height and width."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide1",
+        "label": "Show Slide 1?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide1.jpg",
+        "label": "Slide 1 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide1_link",
+        "label": "Slide 1 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide2",
+        "label": "Show Slide 2?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide2.jpg",
+        "label": "Slide 2 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide2_link",
+        "label": "Slide 2 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide3",
+        "label": "Show Slide 3?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide3.jpg",
+        "label": "Slide 3 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide3_link",
+        "label": "Slide 3 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide4",
+        "label": "Show Slide 4?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide4.jpg",
+        "label": "Slide 4 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide4_link",
+        "label": "Slide 4 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide5",
+        "label": "Show Slide 5?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide5.jpg",
+        "label": "Slide 5 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide5_link",
+        "label": "Slide 5 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide6",
+        "label": "Show Slide 6?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide6.jpg",
+        "label": "Slide 6 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide6_link",
+        "label": "Slide 6 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide7",
+        "label": "Show Slide 7?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide7.jpg",
+        "label": "Slide 7 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide7_link",
+        "label": "Slide 7 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide8",
+        "label": "Show Slide 8?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide8.jpg",
+        "label": "Slide 8 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide8_link",
+        "label": "Slide 8 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide9",
+        "label": "Show Slide 9?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide9.jpg",
+        "label": "Slide 9 image",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide9_link",
+        "label": "Slide 9 Link",
+        "default": "\/pages\/about-us"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slide10",
+        "label": "Show Slide 10?"
+      },
+      {
+        "type": "image",
+        "id": "home-slide10.jpg",
+        "label": "Slide 10",
+        "max-width": 1200
+      },
+      {
+        "type": "text",
+        "id": "home_slide10_link",
+        "label": "Slide 10 Link",
+        "default": "\/pages\/about-us"
+      }
+    ]
+  },
+  {
+    "name": "Collection pages",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Product Grid"
+      },
+      {
+        "type": "select",
+        "id": "products_per_row",
+        "label": "Number of products per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ],
+        "default": "4"
+      },
+      {
+        "type": "select",
+        "id": "number_of_rows",
+        "label": "Number of rows",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          }
+        ],
+        "default": "3"
+      }
+    ]
+  }
+]
