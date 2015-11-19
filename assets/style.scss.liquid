@@ -895,17 +895,46 @@ footer {
         font-weight: bold;
         text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 
+
         span {
           display: inline-block;
+          position: relative;
           background: $link-color;
           color: #fff;
-          padding-left: 0.2em;
-          padding-right: 0.2em;
+          margin-left: 0.2em;
+          margin-right: 0em;
+          padding-left: 0em;
+          padding-right: 0em;
+        }
+
+        span:before {
+          content: '';
+          display: inline-block;
+          background: url("redangle.svg") no-repeat;
+          position: absolute;
+          top: 0px;
+          left: -29px;
+          width: 30px;
+          bottom: 0px;
+          z-index:1;
+        }
+
+        span:after {
+          content: '';
+          display: inline-block;
+          background: url("redangle.svg") no-repeat;
+          position: absolute;
+          top: 0px;
+          right: -29px;
+          width: 30px;
+          bottom: 0px;
+          z-index:1;
+          transform: rotate(180deg);
         }
       }
 
       p {
-        color: rgba(255,255,255,0.8);
+        color: rgba(255,255,255,0.9);
         text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
         text-transform: uppercase;
         letter-spacing: 0.6px;
@@ -916,24 +945,28 @@ footer {
     .rightCol-cell {
 
       position: absolute;
-      top: 40%;
-      right: 0px;
+      top: 50%;
+      right: 20px;
       width: 30%;
       padding: 1em;
       z-index:1;
       transform: translateY(-50%);
 
-      .button:first-child {
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-        margin-bottom: 1em;
-        padding-bottom: 1em;
+      .button-border {
+        display: block;
+        background: rgba(255,255,255,0.1);
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+
       }
     }
 
     .button {
       display: block;
       background: transparent;
-      width: 80%;
+      width: 100%;
       border: 1px solid #fff;
       border-radius: 3px;
       font-size: 1.1em;
@@ -944,6 +977,7 @@ footer {
       text-align: center;
       text-transform: capitalize;
       margin-bottom: 1em;
+      transition: 0.4s;
     }
 
     .button-type-b {
@@ -951,6 +985,18 @@ footer {
       color: rgba(0,0,0,0.8);
       text-shadow: none;
 
+    }
+
+    .button:hover {
+      background: #fff;
+      color: rgba(0,0,0,0.9);
+      text-shadow: none;
+    }
+
+    .button-type-b:hover {
+      background: rgba(255,255,255,0.4);
+      color: #fff;
+      text-shadow: 0px 1px 4px rgba(0,0,0,0.5);
     }
   }
 }
