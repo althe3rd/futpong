@@ -18,19 +18,22 @@
 {% unless settings.homepage_page == blank or pages[settings.homepage_page].empty? %}
 {% assign page = pages[settings.homepage_page] %}
 <div class="rte grid-margins">
+
   {{ page.content }}
 </div>
 {% endunless %}
 
 {% unless settings.homepage_collection == blank or collections[settings.homepage_collection].empty? %}
 {% assign collection = collections[settings.homepage_collection] %}
+<h2 class="containerHeading">Grab a set <span>and become a futpong master!</span></h2>
+
 <ul class="grid clearfix">
 {% for product in collection.products %}
-  {% include 'product-grid-item' with 'three-per-row' %}
+  {% include 'product-grid-item' with 'four-per-row' %}
 {% else %}
 <li>
   <p>
-    You have no products in your {{ collections[settings.homepage_collection].title }} collection. 
+    You have no products in your {{ collections[settings.homepage_collection].title }} collection.
     <a href="http://www.shopify.com/admin/collections">Add some.</a>
   <p>
 </li>
