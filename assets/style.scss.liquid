@@ -803,9 +803,17 @@ footer {
   text-align: center;
   padding: 0.7em;
   font-size: 0.9em;
-  font-weight: bold;
+  font-weight: 600;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
   transition: 0.4s all;
+  
+  span {
+	  display: inline-block;
+	  margin-left: 2em;
+	  color: rgba(255,255,255,0.5);
+	  text-decoration: underline;
+	  font-weight: 400;
+  }
 }
 
 
@@ -875,16 +883,33 @@ footer {
   margin-top: -30px;
 }
 
+
+
 .gallery {
   .gallery-cell {
     display: block;
     width: 100%;
     height: 700px;
     position: relative;
+    
+    .sliderOverlay {
+		position: absolute;
+		top: 0px;
+		left: 0px !important;
+		right: 0px;
+		bottom: 150px;
+		z-index:1;
+		
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	}
 
     .innerWrapper {
       position: relative;
       height: 600px;
+      z-index:2;
 
     }
 
@@ -1013,10 +1038,16 @@ footer {
   position: relative;
 }
 
+.innerWrapper.socialWrapper {
+	
+	position: relative;
+	
+}
+
 .socialLinks {
   position: absolute;
-  bottom: 180px;
-  right: 80px;
+  bottom: 205px;
+  right: 50px;
   z-index:1;
 
   a.facebookLike {
@@ -1026,11 +1057,12 @@ footer {
   }
 
   a {
+	margin-right: 5px;
     color: #fff;
     text-shadow: 0px 1px 4px rgba(0,0,0,0.3);
 
     span {
-      font-size: 22px;
+      font-size: 24px;
     }
   }
 }
@@ -1130,4 +1162,61 @@ footer {
 
 .container {
   max-width: 860px;
+}
+
+.prod-image-wrap {
+	a {
+		display: block;
+		position: relative;
+	}
+	
+	a:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 7px;
+		border-radius: 4px;
+		z-index:4;
+		transition: 0.4s all;
+		background: rgba(0,0,0,0.2);
+		
+		
+	}
+	a:hover:before {
+		
+		background: rgba(0,0,0,0);
+	}
+	
+	a img {
+		box-shadow: 0px 0px 4px rgba(0,0,0,0.0);
+		transition: 0.4s;
+	}
+	
+	a:hover img {
+		box-shadow: 0px 3px 4px rgba(0,0,0,0.25);
+		transform: translateY(-3px);
+	}
+}
+
+.prod-caption {
+	a {
+		display: block;
+		float: left;
+		width: 50%;
+		text-align: left;
+	}
+	
+	span {
+		display: block;
+		float: right;
+		width: 50%;
+		text-align: right;
+	}
+}
+
+.four-per-row {
+	margin-bottom: 2em;
 }
