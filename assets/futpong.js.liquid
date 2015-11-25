@@ -1,0 +1,40 @@
+$("ul.videos a").click(function(e) {
+	e.preventDefault();
+	var vidurl = $(this).attr("href");
+	var videoStr = '<iframe width="100%" height="100%" src="' + vidurl + '" frameborder="0" allowfullscreen></iframe>';
+	$(".videoOverlay").show().html(videoStr);
+	$(".videoCover").show();
+});
+
+
+$(".videoCover").click(function() {
+	$(".videoOverlay").hide().html("");
+	$(".videoCover").hide();
+});
+
+
+$(window).scroll(function() {
+	var scroll = $(this).scrollTop();
+	var top = $(".leftCol-cell").offset().top;
+	var top = top - 120;
+	
+	if(scroll > top) {
+		$(".mainHeader").addClass("sticky");
+	} else {
+		$(".mainHeader").removeClass("sticky");
+	}
+});
+
+
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });

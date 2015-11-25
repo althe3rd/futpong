@@ -161,6 +161,9 @@
 
     </footer>
     {% endcomment %}
+    
+    <div class="videoOverlay"></div>
+    <div class="videoCover"></div>
 
     {% comment %}Shopify does not support Internet Explorer 6 nor 7. It does encourage themes to support IE8 until the end of 2014.{% endcomment %}
     <!--[if lt IE 8]>
@@ -170,6 +173,10 @@
 
 
   {{ 'shop.js'  | asset_url | script_tag }}
+  
+  {{ 'futpong.js'  | asset_url | script_tag }}
+  
+  
 
 </body>
 </html>
