@@ -15,7 +15,13 @@ $(".videoCover").click(function() {
 
 $(window).scroll(function() {
 	var scroll = $(this).scrollTop();
-	var top = $(".leftCol-cell").offset().top;
+	if($("body").hasClass("template-index")) {
+		
+		var top = $(".bannerSlider .leftCol-cell").offset().top;
+	} else {
+		
+		var top = $("body > .container").offset().top;
+	}
 	var top = top - 120;
 	
 	if(scroll > top) {

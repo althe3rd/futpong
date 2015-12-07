@@ -844,11 +844,13 @@ footer {
 
 	    #logo {
 	
-	      img {
+	      img, svg {
 	        max-height:50px;
 	        width: auto;
 	        
 	      }
+	      
+	      
 	    }
 	  }
 	  
@@ -1524,4 +1526,81 @@ ul.people {
 	height: 100%;
 	background: rgba(0,0,0,0.4);
 	line-height: 9;
+}
+
+.template-product, .template-cart, .template-page {
+	.mainHeader {
+		
+		#logo {
+			svg {
+				.titleText {
+					path {
+						fill: rgba(0,0,0,0.8);	
+					}
+				}
+				
+				
+					path.subtitleText {
+						fill: rgba(0,0,0,0.8);	
+					}
+				
+				path {
+					
+				}
+			}	
+		}
+		
+		.navMain {
+			ul {
+				li {
+					a {
+						color: rgba(0,0,0,0.8);
+					}
+					
+					a:hover {
+						border: 1px solid rgba(0,0,0,0.3);
+					}
+				}
+			}
+		}
+	}
+	
+	.mainHeader.sticky {
+		#logo {
+			svg {
+				.titleText {
+					path {
+						fill: rgba(255,255,255,0.8);	
+					}
+				}
+				
+				
+					path.subtitleText {
+						fill: rgba(255,255,255,0.8);	
+					}
+				
+				path {
+					
+				}
+			}	
+		}
+		
+		.navMain {
+			ul {
+				li {
+					a {
+						color: rgba(255,255,255,0.8);
+					}
+					
+					a:hover {
+						border: 1px solid rgba(255,255,255,0.3);
+					}
+				}
+			}
+		}
+	}
+	
+	#main {
+		margin-top: 200px;
+	}
 }
