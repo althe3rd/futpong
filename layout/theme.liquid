@@ -63,15 +63,15 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
-	<a href="#" class="promoBanner">
+{% unless settings.promo_message == blank %}
+	<a href="{{ settings.promo_link }}" class="promoBanner">
     <div class="innerWrapper">
-      Test Promo Message
+      {{ settings.promo_message }}
       
       <span>Offer Details</span>
     </div>
   </a>
-
+{% endunless %}
 
 
 

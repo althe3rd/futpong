@@ -268,6 +268,22 @@
     ]
   },
   {
+    "name": "Global Content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "promo_message",
+        "label": "Promo message and link"
+      },
+      {
+        "type": "text",
+        "id": "promo_link",
+        "default": "\/pages\/about-us",
+        "label": "Link to the page for more information"
+      }
+    ]
+  },
+  {
     "name": "Homepage",
     "settings": [
       {
@@ -377,7 +393,37 @@
         "type": "text",
         "id": "home_slide1_link",
         "label": "Slide 1 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide1_linktext",
+        "label": "Slide 1 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide1_link_2",
+        "label": "Slide 1 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide1_linktext2",
+        "label": "Slide 2 Link Text",
+        "default": "Sign Up For Futpong News"
+      },
+      {
+        "type": "text",
+        "id": "home_slide1_title",
+        "label": "Slide 1 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide1_description",
+        "label": "Slide 1 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -394,7 +440,37 @@
         "type": "text",
         "id": "home_slide2_link",
         "label": "Slide 2 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide2_linktext",
+        "label": "Slide 2 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide2_link_2",
+        "label": "Slide 2 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide2_linktext2",
+        "label": "Slide 2 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide2_title",
+        "label": "Slide 2 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide2_description",
+        "label": "Slide 2 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -411,7 +487,37 @@
         "type": "text",
         "id": "home_slide3_link",
         "label": "Slide 3 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide3_linktext",
+        "label": "Slide 3 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide3_link_2",
+        "label": "Slide 3 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide3_linktext2",
+        "label": "Slide 3 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide3_title",
+        "label": "Slide 3 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide3_description",
+        "label": "Slide 3 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -428,7 +534,37 @@
         "type": "text",
         "id": "home_slide4_link",
         "label": "Slide 4 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide4_linktext",
+        "label": "Slide 4 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide4_link_2",
+        "label": "Slide 4 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide4_linktext2",
+        "label": "Slide 4 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide4_title",
+        "label": "Slide 4 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide4_description",
+        "label": "Slide 4 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -445,7 +581,37 @@
         "type": "text",
         "id": "home_slide5_link",
         "label": "Slide 5 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide5_linktext",
+        "label": "Slide 5 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide5_link_2",
+        "label": "Slide 5 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide5_linktext2",
+        "label": "Slide 5 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide5_title",
+        "label": "Slide 5 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide5_description",
+        "label": "Slide 5 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -462,7 +628,37 @@
         "type": "text",
         "id": "home_slide6_link",
         "label": "Slide 6 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide6_linktext",
+        "label": "Slide 6 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide6_link_2",
+        "label": "Slide 6 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide6_linktext2",
+        "label": "Slide 6 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide6_title",
+        "label": "Slide 6 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide6_description",
+        "label": "Slide 6 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -479,7 +675,37 @@
         "type": "text",
         "id": "home_slide7_link",
         "label": "Slide 7 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide7_linktext",
+        "label": "Slide 7 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide7_link_2",
+        "label": "Slide 7 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide7_linktext2",
+        "label": "Slide 7 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide7_title",
+        "label": "Slide 7 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide7_description",
+        "label": "Slide 7 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -496,7 +722,37 @@
         "type": "text",
         "id": "home_slide8_link",
         "label": "Slide 8 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide8_linktext",
+        "label": "Slide 8 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide8_link_2",
+        "label": "Slide 8 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide8_linktext2",
+        "label": "Slide 8 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide8_title",
+        "label": "Slide 8 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide8_description",
+        "label": "Slide 8 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -513,7 +769,37 @@
         "type": "text",
         "id": "home_slide9_link",
         "label": "Slide 9 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide9_linktext",
+        "label": "Slide 9 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide9_link_2",
+        "label": "Slide 9 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide9_linktext2",
+        "label": "Slide 9 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide9_title",
+        "label": "Slide 9 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide9_description",
+        "label": "Slide 9 Description",
+        "default": "My Description"
       },
       {
         "type": "checkbox",
@@ -530,7 +816,37 @@
         "type": "text",
         "id": "home_slide10_link",
         "label": "Slide 10 Link",
-        "default": "\/pages\/about-us"
+        "default": "#getstarted"
+      },
+      {
+        "type": "text",
+        "id": "home_slide10_linktext",
+        "label": "Slide 10 Link Text",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide10_link_2",
+        "label": "Slide 10 Link 2",
+        "default": "#newsletter"
+      },
+      {
+        "type": "text",
+        "id": "home_slide10_linktext2",
+        "label": "Slide 10 Link Text 2",
+        "default": "Get Started With Futpong"
+      },
+      {
+        "type": "text",
+        "id": "home_slide10_title",
+        "label": "Slide 10 Title",
+        "default": "My <span>Title</span>"
+      },
+      {
+        "type": "textarea",
+        "id": "home_slide10_description",
+        "label": "Slide 10 Description",
+        "default": "My Description"
       }
     ]
   },

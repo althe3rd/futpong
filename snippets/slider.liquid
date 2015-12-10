@@ -9,20 +9,30 @@
 					{% capture show %}show_slide{{i}}{% endcapture %}
 					{% capture image %}home-slide{{i}}.jpg{% endcapture %}
 					{% capture link %}home_slide{{i}}_link{% endcapture %}
+					{% capture linktext %}home_slide{{i}}_linktext{% endcapture %}
+					{% capture link2 %}home_slide{{i}}_link_2{% endcapture %}
+					{% capture linktext2 %}home_slide{{i}}_linktext2{% endcapture %}
+					{% capture title %}home_slide{{i}}_title{% endcapture %}
+					{% capture description %}home_slide{{i}}_description{% endcapture %}
 					{% if settings[show] %}
       <div class="gallery-cell cf" style="background: url('{{ image | asset_url }}') no-repeat; background-size: cover; background-position: bottom center;">
       <div class="sliderOverlay"></div>
       	<div class="innerWrapper">
 	      	<div class="leftCol-cell">
-	      		<h2>Join the <span>Revolution</span></h2>
-	      		<p>Description Text</p>
+	      		<h2>{{settings[title]}}</h2>
+	      		<p>{{settings[description]}}</p>
 	      	</div>
-		  	{%comment%}{{settings[link]}}{%endcomment%}
+		  	
 	      	<div class="rightCol-cell">
-	      		<a href="#getstarted" class="button">Get started with Futpong</a>
+	      		{% unless settings[linktext] == blank %}
+	      			<a href="{{settings[link]}}" class="button">{{settings[linktext]}}</a>
+	      		{% endunless %}
+	      		
+	      		{% unless settings[linktext2] == blank %}
             <div class="button-border"></div>
-	      		<a href="#" class="button button-type-b">Sign up for Futpong news</a>
+	      		<a href="{{settings[link2]}}" class="button button-type-b">{{settings[linktext2]}}</a>
 	      	</div>
+	      		{% endunless %}
       	</div>
 
       </div>
