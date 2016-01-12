@@ -23,8 +23,8 @@ Here, for the sake of teaching, we will use 2 presentation options:
 <li class="{{ product-grid-item }}{% unless product.available %} sold-out{% endunless %}{% if on_sale %} on-sale{% endif %}{% if product-grid-item == 'four-per-row' %}{% cycle 'last': '', '', '', ' last-in-row' %}{% elsif product-grid-item == 'three-per-row' %}{% cycle 'last': '', '', ' last-in-row' %}{% endif %} centered">
 
   <div class="prod-image-wrap">  
-    <a href="{{ product.url | within: collection }}">
-      <img src="{{ product | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}" />
+    <a href="{{ product.url | within: collection }}" style="background: url({{ product | img_url: 'grande' }}) no-repeat; background-size: cover; background-position: center center;">
+      
     </a>
   </div><!-- .prod-image-wrap -->
   
