@@ -26,15 +26,8 @@ Remove search form
 				<li class="show-mobile cust-account">
 					<a href="/account/logout">{{ 'layout.customer.log_out' | t }}</a>
 				</li>
-			{% else %}
-				<li class="show-mobile cust-account">
-					<a href="/account/login">{{ 'layout.customer.log_in' | t }}</a>
-				</li>
-				{% if shop.customer_accounts_optional %}
-					<li class="show-mobile cust-account">
-						<a href="/account/register">{{ 'layout.customer.create_account' | t }}</a>
-					</li>
-				{% endif %}
+		
+				
 			{% endif%}
 		{% endif %}
 
@@ -131,10 +124,7 @@ Remove search form
 			{% if customer %}
 				Logged in as <a href="/account">{{ customer.first_name }}</a> · {{ 'Log out' | customer_logout_link }}
 			{% else %}
-				{{ 'Log in' | customer_login_link }}
-				{% if shop.customer_accounts_optional %}
-				or {{ 'Create an account' | customer_register_link }}
-				{% endif %}
+				
 			{% endif %}
 		
 		{% endif %}</li>
