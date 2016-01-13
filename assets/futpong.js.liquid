@@ -1,8 +1,9 @@
-$("ul.videos a, a.videoButton").click(function(e) {
+$("ul.videos a, a.videoButtonTrigger").click(function(e) {
 	e.preventDefault();
 	var vidurl = $(this).attr("href");
 	var videoStr = '<iframe width="100%" height="100%" src="' + vidurl + '" frameborder="0" allowfullscreen></iframe>';
-	$(".videoOverlay").show().html(videoStr);
+	$(".videoOverlay").show();
+	$(".videoOverlayInner").html(videoStr);
 	$(".videoCover").show();
 });
 
@@ -11,15 +12,22 @@ $(".modalTrigger").click(function(e) {
 	e.preventDefault();
 	var modalContent = $(this).find('.modalContentSource').html();
 	
-	$(".modalOverlay").show().html(modalContent);
+	$(".modalOverlay").show();
+	$(".modalOverlayInner").html(modalContent);
 	$(".videoCover").fadeIn('300');
 });
 
 
-$(".videoCover").click(function() {
-	$(".videoOverlay, .modalOverlay").hide().html("");
+$(".videoCover, .videoOverlay .close, .modalOverlay .close").click(function(e) {
+	e.preventDefault();
+	$(".videoOverlayInner").html("");
+	$(".videoOverlay").hide();
+	$(".modalOverlayInner").html("");
+	$(".modalOverlay").hide();
 	$(".videoCover").fadeOut('300');
 });
+
+
 
 
 $(window).scroll(function() {

@@ -1388,6 +1388,29 @@ footer {
   max-width: 1060px;
 }
 
+a.storybutton {
+	display: inline-block;
+	padding: 1.3em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	border-radius: 3px;
+	line-height:1;
+	border: 2px solid rgba(255,255,255,0.8);
+	color: rgba(255,255,255,0.8);
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: rgba(255,255,255,0.1);
+	transition: 0.4s;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.4);
+	text-shadow: 0px 2px 7px rgba(0,0,0,0.4);
+}
+
+a.storybutton:hover {
+	background: rgba(255,255,255,0.8);
+	color: rgba(0,0,0,0.8);
+}
+
 .prod-image-wrap {
 	a {
 		display: block;
@@ -1720,11 +1743,96 @@ ul.people {
 	box-shadow: 0px 3px 20px rgba(0,0,0,0.4);
 }
 
+.videoOverlay {
+	.close {
+		position: absolute;
+		top: 0px;
+		right: -50px;
+		z-index:3;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		
+		svg {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			
+			.ex {
+				fill: rgba(0,0,0,0.5);
+				transition: 0.4s;
+			}
+		}
+	}
+	
+	.close:hover {
+		svg {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			
+			.ex {
+				fill: rgba(0,0,0,0.8);
+			}
+		}
+	}
+}
+
+.videoOverlayInner {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index:1;
+	
+	
+}
+
+
 .modalOverlay {
 	background: #fff;
 	padding: 40px;
 	border-radius: 4px;
 	overflow: auto;
+	max-height: 80%;
+	height: auto;
+	
+	
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index:3;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		
+		svg {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			
+			.ex {
+				fill: rgba(0,0,0,0.5);
+				transition: 0.4s;
+			}
+		}
+	}
+	
+	.close:hover {
+		svg {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			
+			.ex {
+				fill: rgba(0,0,0,0.8);
+			}
+		}
+	}
 	
 	p {
 		line-height: 1.6;
