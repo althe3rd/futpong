@@ -1,0 +1,307 @@
+{
+  "general": {
+    "404": {
+      "title": "Désolé, n'avons trouver la page que vous cherchez.",
+      "subtext_html": "Veuillez cliquer <a href=\"\/collections\/all\">ici<\/a> pour continuer vos achats."
+    },
+    "breadcrumbs": {
+      "home": "Accueil",
+      "back_to_home": "Retour à la page d'accueil"
+    },
+    "accessibility": {
+      "skip_nav": "Sauter la navigation"
+    },
+    "search": {
+      "no_results_html": "Désolé, nous n'avons rien trouvé pour {{terms}}.",
+      "results_for_html": "Résultats pour {{terms}}.",
+      "no_search": "Veuillez utiliser le formulaire ci-dessus pour effectuer votre recherche sur ce site.",
+      "no_resultitle": "Recherche de produits sur notre site",
+      "label": "Rechercher dans ce site",
+      "submit": "Recherche",
+      "placeholder": "Recherche..."
+    }
+  },
+  "blogs": {
+    "general": {
+      "read_more_html": "En lire plus"
+    },
+    "categories": {
+      "title": "Catégories",
+      "view_all": "Voir tout"
+    },
+    "article": {
+      "older_post": "Publication précédente",
+      "newer_post": "Publication suivante"
+    },
+    "comments": {
+      "title": "Commentaires",
+      "leave_comment": "Laisser un commentaire",
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "message": "Votre message",
+      "post": "Soumettre un commentaire",
+      "moderated": "Veuillez noter, les commentaires doivent être approuvés d'être publiés.",
+      "success_moderated": "Votre commentaire a été publié avec succès. Nous le publierons sous peu, puisque notre blog est modéré.",
+      "success": "Votre commentaire a été publié avec succès! Merci!",
+      "comments_with_count": {
+        "one": "{{count}} commentaire",
+        "other": "{{count}} commentaires"
+      }
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Panier d'artciles",
+      "item": "Article",
+      "price": "Prix",
+      "quantity": "Quantité",
+      "total": "Total",
+      "remove": "Supprimer",
+      "uploaded_file": "fichier téléchargé",
+      "or": "ou",
+      "note": "Ajoutez une note à votre commande ...",
+      "subtotal": "Sous-total",
+      "update": "Mise à jour",
+      "checkout": "Check-out",
+      "continue_shopping": "Continuer de magasiner",
+      "empty": "Votre panier est actuellement vide.",
+      "continue_browsing_html": "Continuer en naviguant <a href=\"\/collections\/all\">ici<\/a>."
+    }
+  },
+  "collections": {
+    "general": {
+      "no_matches": "Désolé, il n'y a pas de produits correspondant à votre recherche.",
+      "link_title": "Parcourir le {{title}} collection",
+      "list_collections_title": "Collections",
+      "items": {
+        "one": "article",
+        "other": "articles"
+      }
+    },
+    "tags": {
+      "title": "Mots clés",
+      "tagged_as": "- Articles taggés"
+    },
+    "sorting": {
+      "title": "Trier par",
+      "featured": "Sélection",
+      "best_selling": "Meilleures vendeurs",
+      "az": "Par ordre alphabétique, de A à Z",
+      "za": "Par ordre alphabétique, de Z à A",
+      "price_ascending": "Prix??, bas à haut",
+      "price_descending": "Prix??, haut à bas",
+      "created_ascending": "Plus ancien au plus récent",
+      "created_descending": "Plus récent au plus ancien"
+    },
+    "quickview": {
+      "button_text": "VUE RAPIDE",
+      "add_to_cart": "Ajouter au panier",
+      "view_details": "Voir les détails du produit"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "message": "Message",
+      "send": "Envoyer",
+      "post_success": "Merci de nous avoir contacter. Nous vous reviendrons dès que possible."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mon compte",
+      "details": "Détails du compte",
+      "view_addresses": "Voir Adresses",
+      "return": "Retourner aux Détails Client"
+    },
+    "activate_account": {
+      "title": "Activer le compte",
+      "subtext": "Créez votre mot de passe pour activer votre compte.",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
+      "submit": "Activer le compte",
+      "cancel": "Invitation de déclin"
+    },
+    "addresses": {
+      "title": "Vos adresses",
+      "default": "Par défaut",
+      "add_new": "Ajouter une nouvelle adresse",
+      "edit_address": "Modifier adresse",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "company": "Entreprise",
+      "address1": "Address1",
+      "address2": "Address2",
+      "city": "Ville",
+      "country": "Pays",
+      "province": "Province",
+      "zip": "Code postal \/ Code Zip",
+      "phone": "Téléphone",
+      "set_default": "Définir comme adresse par défaut",
+      "add": "Ajouter une adresse",
+      "update": "Modifier l'adresse",
+      "cancel": "Annuler",
+      "edit": "Modifier",
+      "delete": "Effacer"
+    },
+    "login": {
+      "title": "Connexion",
+      "email": "Email",
+      "forgot_password": "Mot de passe oublié?",
+      "password": "Mot de passe",
+      "sign_in": "Connexion",
+      "cancel": "Retour à la boutique",
+      "guest_title": "Continuer en tant qu'invité",
+      "guest_continue": "Continuer"
+    },
+    "new_customer": {
+      "title": "Nouveaux Clients",
+      "subtext": "Inscrivez avec nous pour faire vos commandes plus rapidement et vous pouvez garder un œil sur toutes vos commandes précédentes aussi.",
+      "register": "Inscrivez-vous maintenant",
+      "subtext_guest": "Pas de compte? Commander en tant qu'invité et de créer un",
+      "continue_as_guest": "Continuer en tant qu'invité"
+    },
+    "orders": {
+      "title": "Historique des commandes",
+      "order_number": "Commande",
+      "date": "Date",
+      "payment_status": "Statut du paiement",
+      "fulfillment_status": "Statut accomplissement",
+      "total": "Total",
+      "none": "Vous n'avez pas encore passé de commande."
+    },
+    "order": {
+      "title": "Commande {{name}}",
+      "date": "Commandé le {{date}}",
+      "cancelled": "Commande annulée le {{date}}",
+      "cancelled_reason": "Raison: {{reason}}",
+      "billing_address": "Adresse de facturation",
+      "payment_status": "Statut du paiement",
+      "shipping_address": "Adresse de livraison",
+      "fulfillment_status": "Statut accomplissement",
+      "discount": "Réduction",
+      "shipping": "Livraison",
+      "tax": "Taxes",
+      "details": {
+        "product": "Produit",
+        "sku": "SKU",
+        "price": "Prix",
+        "quantity": "Quantité",
+        "total": "Total",
+        "fulfilled_at": "Rempli le {{date}}",
+        "subtotal": "Subtotal"
+      }
+    },
+    "recover_password": {
+      "title": "Réinitialiser votre mot de passe",
+      "email": "Email",
+      "submit": "Soumettre",
+      "cancel": "Annuler",
+      "subtext": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe.",
+      "success": "Nous vous avons envoyé un e-mail avec un lien pour mettre à jour votre mot de passe."
+    },
+    "reset_password": {
+      "title": "Réinitialiser le mot de passe compte",
+      "subtext": "Entrez un nouveau mot de passe pour {{email}}",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
+      "submit": "Réinitialiser le mot de passe"
+    },
+    "register": {
+      "title": "S'enregistrer",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "S'enregistrer",
+      "login": "ou connexion"
+    }
+  },
+  "home_page": {
+    "sections": {
+      "featured_coll_title": "Collections à l'affiche",
+      "featured_prod_title": "Articles en vedette"
+    }
+  },
+  "products": {
+    "general": {
+      "previous_product_html": "&larr; Produit précédent",
+      "next_product_html": "Produit suivant &rarr;",
+      "from": "À partir de",
+      "related_items": "Vous aimerez aussi ..."
+    },
+    "product": {
+      "sold_out": "Épuisé",
+      "out_of_stock_msg": "Désolé, ce produit est en rupture de stock",
+      "preorder_msg": "Disponible en pré-commande",
+      "unavailable": "Indisponible",
+      "quantity": "Quantité",
+      "add_to_cart": "Ajouter au panier"
+    },
+    "images": {
+      "lightbox_loading": "Chargement en cours",
+      "lightbox_previous": "Précédent (flèche vers la gauche)",
+      "lightbox_next": "Suivant (flèche droite du clavier)",
+      "lightbox_close": "Fermer (Esc)",
+      "lightbox_of": "de",
+      "zoom_images": {
+        "one": "Cliquez sur l'image pour agrandir",
+        "other": "Cliquez sur les images pour agrandir"
+      }
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Voici votre {{value}} carte-cadeau de la boutique {{ shop }}!",
+      "subtext": "Voici votre carte-cadeau!",
+      "disabled": "Inactif",
+      "expired": "Expiré le {{ expiry }} expiration",
+      "active": "Expire le {{ expiry }} expiration",
+      "redeem": "Utilisez ce code à la caisse pour obtenir votre carte-cadeau",
+      "shop_link": "Commencez à magasiner",
+      "print": "Imprimer"
+    }
+  },
+  "mobile": {
+    "general": {
+      "menu_button": "Menu"
+    }
+  },
+  "layout": {
+    "cart": {
+      "title": "Voir le panier",
+      "items": {
+        "one": "article",
+        "other": "articles"
+      }
+    },
+    "currency": {
+      "pick_a_currency": "Choisissez une devise"
+    },
+    "customer": {
+      "my_account": "Mon compte",
+      "log_out": "Déconnexion",
+      "log_in": "Connexion",
+      "create_account": "S'enregistrer"
+    },
+    "newsletter": {
+      "title": "Bulletin",
+      "sub_text": "Inscrivez-vous à notre newsletter pour les dernières nouvelles et les offres spéciales.",
+      "submit": "S'abonner",
+      "placeholder": "saisissez votre e-mail..."
+    },
+    "footer": {
+      "pay_icons_title": "Nous acceptons les méthodes de paiement suivantes:",
+      "latest_posts_title": "Derniers messages",
+      "social_title": "Rester en contact",
+      "links_title": "Liens utiles",
+      "popular_title": "Meilleurs vendeurs",
+      "theme_title": "Site conçu par",
+      "copyright_html": "Droit d'auteur &copy;",
+      "rights": "Tous les droits sont réservés",
+      "back_top": "Retour en haut de page"
+    }
+  }
+}
