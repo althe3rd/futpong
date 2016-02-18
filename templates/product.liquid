@@ -57,7 +57,7 @@
       {% else %}
         {% assign vendor_url = product.vendor | url_for_vendor %}
       {% endif %}
-      <h2 itemprop="brand" class="delta">{{ product.vendor | link_to: vendor_url }}</h2>
+      
       
       <div id="product-description" class="rte" itemprop="description">
         {{ product.description }}
@@ -103,7 +103,7 @@
       </div>        
              
       <div id="backorder" class="hidden">
-        <p>{{ '%s is back-ordered. We will ship it separately in 10 to 15 days.' | replace: '%s', '<span id="selected-variant"></span>' }}</p>
+        <p>{{ '%s is back-ordered.  It will ship in February 2016' | replace: '%s', '<span id="selected-variant"></span>' }}</p>
       </div>
         
       <div id="product-add">

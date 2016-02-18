@@ -18,7 +18,15 @@ You may email us with any further questions or concerns regarding this Privacy P
 			<h3>Get Updates</h3>
 			
 			<h4>Kick It <span>For Futpong News</span></h4>
-			<input type="text" placeholder="your@email.com">
+			
+			
+			<form method="post" action="{{settings.newsletter_action}}">
+			 
+			  
+			    <input name="EMAIL" type="email" class="required email input-text" placeholder="{{'layout.newsletter.placeholder' | t }}" />
+			    <button class="button nice" type="submit">{{'layout.newsletter.submit' | t }}</button>
+			  
+			</form>  
 			
 			
 		</div>

@@ -390,6 +390,17 @@
         "max-width": 1200
       },
       {
+        "type": "radio",
+        "id": "home-slide1-alignment",
+        "label": "Slide 1 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
+      },
+      {
         "type": "text",
         "id": "home_slide1_link",
         "label": "Slide 1 Link",
@@ -435,6 +446,17 @@
         "id": "home-slide2.jpg",
         "label": "Slide 2 image",
         "max-width": 1200
+      },
+      {
+        "type": "radio",
+        "id": "home-slide2-alignment",
+        "label": "Slide 2 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
       },
       {
         "type": "text",
@@ -484,6 +506,17 @@
         "max-width": 1200
       },
       {
+        "type": "radio",
+        "id": "home-slide3-alignment",
+        "label": "Slide 3 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
+      },
+      {
         "type": "text",
         "id": "home_slide3_link",
         "label": "Slide 3 Link",
@@ -529,6 +562,17 @@
         "id": "home-slide4.jpg",
         "label": "Slide 4 image",
         "max-width": 1200
+      },
+      {
+        "type": "radio",
+        "id": "home-slide4-alignment",
+        "label": "Slide 4 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
       },
       {
         "type": "text",
@@ -578,6 +622,17 @@
         "max-width": 1200
       },
       {
+        "type": "radio",
+        "id": "home-slide5-alignment",
+        "label": "Slide 5 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
+      },
+      {
         "type": "text",
         "id": "home_slide5_link",
         "label": "Slide 5 Link",
@@ -623,6 +678,17 @@
         "id": "home-slide6.jpg",
         "label": "Slide 6 image",
         "max-width": 1200
+      },
+      {
+        "type": "radio",
+        "id": "home-slide6-alignment",
+        "label": "Slide 6 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
       },
       {
         "type": "text",
@@ -672,6 +738,17 @@
         "max-width": 1200
       },
       {
+        "type": "radio",
+        "id": "home-slide7-alignment",
+        "label": "Slide 7 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
+      },
+      {
         "type": "text",
         "id": "home_slide7_link",
         "label": "Slide 7 Link",
@@ -717,6 +794,17 @@
         "id": "home-slide8.jpg",
         "label": "Slide 8 image",
         "max-width": 1200
+      },
+      {
+        "type": "radio",
+        "id": "home-slide8-alignment",
+        "label": "Slide 8 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
       },
       {
         "type": "text",
@@ -766,6 +854,17 @@
         "max-width": 1200
       },
       {
+        "type": "radio",
+        "id": "home-slide9-alignment",
+        "label": "Slide 9 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
+      },
+      {
         "type": "text",
         "id": "home_slide9_link",
         "label": "Slide 9 Link",
@@ -813,6 +912,17 @@
         "max-width": 1200
       },
       {
+        "type": "radio",
+        "id": "home-slide10-alignment",
+        "label": "Slide 10 image alignment",
+        "options": [
+          { "value": "left", "label": "Align Left" },
+          { "value": "center", "label": "Align Center" },
+          { "value": "right", "label": "Align Right" }
+        ],
+        "default": "center"
+      },
+      {
         "type": "text",
         "id": "home_slide10_link",
         "label": "Slide 10 Link",
@@ -847,6 +957,22 @@
         "id": "home_slide10_description",
         "label": "Slide 10 Description",
         "default": "My Description"
+      }
+    ]
+  },
+  {
+    "name": "Newsletter",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_newsletter_form",
+        "label": "Show newsletter form?"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_action",
+        "label": "Form action URL",
+        "info": "Your form action starting with http:\/\/. See [instructions](http:\/\/fresh-fresh.myshopify.com\/pages\/faq) ."
       }
     ]
   },

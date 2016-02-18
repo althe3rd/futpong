@@ -1,3 +1,18 @@
+var windowWidth = $(window).width();
+
+$( window ).resize(function() {
+  windowWidth = $(window).width();
+});
+
+
+$('.gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  cellSelector: '.gallery-cell',
+  autoPlay: 8000
+});
+
 $("ul.videos a, a.videoButtonTrigger").click(function(e) {
 	e.preventDefault();
 	var vidurl = $(this).attr("href");
@@ -41,10 +56,13 @@ $(window).scroll(function() {
 	}
 	var top = top - 120;
 	
-	if(scroll > top) {
-		$(".mainHeader").addClass("sticky");
-	} else {
-		$(".mainHeader").removeClass("sticky");
+	if(windowWidth > 830) {
+	
+		if(scroll > top) {
+			$(".mainHeader").addClass("sticky");
+		} else {
+			$(".mainHeader").removeClass("sticky");
+		}
 	}
 });
 

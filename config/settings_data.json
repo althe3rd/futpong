@@ -59,7 +59,8 @@
     "checkout_button_color": "#1990C6",
     "checkout_call_to_action_color": "#8fc243",
     "customer_layout": "theme",
-    "slide_trans": "scrollHorz"
+    "slide_trans": "scrollHorz",
+    "newsletter_action": "\/\/futpong.us11.list-manage.com\/subscribe\/post?u=c85f4ec1e461371b64e34f1d2&amp;id=cab9b50586"
   },
   "presets": {
     "default": {

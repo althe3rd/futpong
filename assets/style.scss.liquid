@@ -1059,6 +1059,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
       padding: 1em;
       z-index:1;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
 
       h2 {
         color: #fff;
@@ -1101,6 +1102,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
           bottom: 0px;
           z-index:1;
           transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
         }
       }
 
@@ -1160,6 +1162,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
           bottom: 0px;
           z-index:1;
           transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
         }
       }
 
@@ -1181,6 +1184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
       padding: 1em;
       z-index:1;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
       text-align: right;
 
 	  .buttonsCell {
@@ -1449,6 +1453,7 @@ a.storybutton:hover {
 	a:hover {
 		box-shadow: 0px 3px 4px rgba(0,0,0,0.25);
 		transform: translateY(-3px);
+		-webkit-transform: translateY(-3px);
 	}
 }
 
@@ -1586,6 +1591,7 @@ ul.videos {
 				width: 40px;
 				height: 40px;
 				transform: translate(-50%,-50%) scale(0.7);
+				-webkit-transform: translate(-50%,-50%) scale(0.7);
 				transition: 0.4s;
 				z-index:4;
 			
@@ -1618,6 +1624,7 @@ ul.videos {
 				width: 40px;
 				height: 40px;
 				transform: translate(-50%,-50%) scale(1);
+				-webkit-transform: translate(-50%,-50%) scale(1);
 				z-index:4;
 			
 			
@@ -1739,6 +1746,7 @@ ul.people {
 	height: 80%;
 	line-height: 1;
 	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
 	z-index:11;
 	box-shadow: 0px 3px 20px rgba(0,0,0,0.4);
 }
@@ -1983,6 +1991,8 @@ ul.people {
 .row .child {
 	flex: 1 0 50%;
 	-ms-flex: 1 0 50%;
+	-webkit-flex: 1 0 50%;
+	
 	min-width: 200px;
 	max-width: 50%;
 	padding: 0 0.5rem 1rem;
@@ -2004,6 +2014,9 @@ ul.people {
 	.child {
 		flex: 1 0 auto;
 		-ms-flex: 1 0 auto;
+		-webkit-flex: 1 0 auto;
+		
+		
 		
 		text-align: center;
 		height: auto;
@@ -2022,7 +2035,9 @@ ul.people {
 			
 			.expandIcon {
 				transform: translate(-50%,-50%) rotate(90deg);
+				-webkit-transform: translate(-50%,-50%) rotate(90deg);
 				transform-origin: center center;
+				-webkit-transform-origin: center center;
 			}
 		}
 		
@@ -2056,6 +2071,7 @@ ul.people {
 				letter-spacing: 1.5px;
 				text-transform: uppercase;
 				transform: translate(-50%,-50%);
+				-webkit-transform: translate(-50%,-50%);
 				
 			}
 			
@@ -2065,9 +2081,11 @@ ul.people {
 				left: 50%;
 				z-index:3;
 				transform: translate(-50%,-50%) rotate(0deg);
+				-webkit-transform: translate(-50%,-50%) rotate(0deg);
 				width: 30px;
 				height: 30px;
 				transform-origin: center, center;
+				-webkit-transform-origin: center, center;
 				transition: 0.4s;
 				
 				svg {
@@ -2196,6 +2214,7 @@ ul.people {
 			  color: #fff;
 			  text-align: center;
 			  transform: translateY(-10%);
+			  -webkit-transform: translateY(-10%);
 			  
 			  .storyTitle {
 				  font-size: 14px;
@@ -2248,6 +2267,7 @@ ul.people {
 		width: 20px;
 		height: 20px;
 		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
 		z-index:1;
 		
 		svg {
@@ -2333,6 +2353,7 @@ ul.people {
 		right: 40px;
 		z-index:3;
 		transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
 		
 		svg {
 			width: 100%;
@@ -2451,6 +2472,7 @@ footer.pageFooter {
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
 			right: 90px;
 			z-index:1;
 			color: rgba(255,255,255,0.7);
@@ -2467,4 +2489,149 @@ footer.pageFooter {
 
 .modalContentSource {
 	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+		.promoBanner {
+			span {
+				display: none;
+				position: relative;
+				margin: 0 auto;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+		}
+}
+
+@media screen and (max-width: 830px) {
+	
+	.mainHeader  {
+		
+		.logo {
+			position: relative;	
+		}
+		
+		.navMain {
+			position:relative;
+			top: 10px;
+			background: rgba(0,0,0,0.3);
+			
+			#main-nav {
+				margin-bottom: 0px;
+			}
+		}
+		
+	
+	}
+
+	.row.no-gutter {
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			
+			.child {
+				flex: 50%;
+				-webkit-flex: 49%;
+			}
+		}
+		
+		.container.grabaset {
+			margin-top: -10px;
+		}
+		
+	.flex-container.awesome {
+		.flexchild.people {
+			width: 100%;
+			min-height: 100px;
+		}
+		.flexchild {
+			width: 100%;
+			min-height: 300px;
+			
+			.cardText {
+				transform: translateY(-30%);
+				-webkit-transform: translateY(-30%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+		.gallery .gallery-cell .leftCol-cell {
+			display: none;
+		}
+		.gallery .gallery-cell .rightCol-cell {
+			width: 100%;
+		}
+	
+		.prod-image-wrap a {
+			height: 220px;
+		}
+		
+		.programsLeftCol {
+			width: 100%;
+		}
+		
+		.programsRightCol {
+			width: 100%;
+		}
+		
+		ul.people li .image {
+			width: 100px;
+			height: 100px;
+		}
+}
+
+
+@media screen and (max-width: 480px) {
+	
+	.promoBanner {
+		font-size: 1em;	
+	}
+	
+	.prod-image-wrap a {
+			height: 200px;
+		}
+		
+		li.three-per-row {
+			margin-bottom: 2em;
+		}
+		
+	
+		
+	.footerLead .leftCol, .footerLead .rightCol {
+		width: 100%;
+	}
+	
+	footer.pageFooter .innerWrapper .footersocial {
+		position: relative;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		transform: none;
+		-webkit-transform: none;
+	}
+	
+	ul.people li, ul.people li:last-child {
+		width: 45% !important;
+		margin-bottom: 20px;
+		
+	}
+	
+	ul.people li:nth-child(3) {
+		clear: left;
+	}
+	
+	.row.no-gutter {
+			flex: 1 0 auto;
+			-webkit-flex: 1 0 auto;
+			
+			
+			.child {
+				flex: 100%;
+				-webkit-flex: 100%;
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+	
 }

@@ -3,11 +3,12 @@
 
 <div class="bannerSlider {% if settings.mobile_hide_slideshow %}hide-for-mobile{% endif %}">
 
-    <div class="gallery js-flickity">
+    <div class="gallery">
 
     	{% for i in (1..10) %}
 					{% capture show %}show_slide{{i}}{% endcapture %}
 					{% capture image %}home-slide{{i}}.jpg{% endcapture %}
+					{% capture alignment %}home-slide{{i}}-alignment{% endcapture %}
 					{% capture link %}home_slide{{i}}_link{% endcapture %}
 					{% capture linktext %}home_slide{{i}}_linktext{% endcapture %}
 					{% capture link2 %}home_slide{{i}}_link_2{% endcapture %}
@@ -15,7 +16,7 @@
 					{% capture title %}home_slide{{i}}_title{% endcapture %}
 					{% capture description %}home_slide{{i}}_description{% endcapture %}
 					{% if settings[show] %}
-      <div class="gallery-cell cf" style="background: url('{{ image | asset_url }}') no-repeat; background-size: cover; background-position: bottom center;">
+      <div class="gallery-cell cf" style="background: url('{{ image | asset_url }}') no-repeat; background-size: cover; background-position: bottom {{settings[alignment]}};">
       <div class="sliderOverlay"></div>
       	<div class="innerWrapper innerWrapper2">
 	      	<div class="leftCol-cell">
