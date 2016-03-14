@@ -16,7 +16,7 @@
 					{% capture title %}home_slide{{i}}_title{% endcapture %}
 					{% capture description %}home_slide{{i}}_description{% endcapture %}
 					{% if settings[show] %}
-      <div class="gallery-cell cf" style="background: url('{{ image | asset_url }}') no-repeat; background-size: cover; background-position: bottom {{settings[alignment]}};">
+      <div class="gallery-cell cf" style="background: url('{{ image | asset_url }}') no-repeat; background-size: cover; background-position: {{settings[alignment]}} 100%;">
       <div class="sliderOverlay"></div>
       	<div class="innerWrapper innerWrapper2">
 	      	<div class="leftCol-cell">

@@ -390,14 +390,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide1-alignment",
         "label": "Slide 1 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -448,14 +443,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide2-alignment",
         "label": "Slide 2 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -506,14 +496,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide3-alignment",
         "label": "Slide 3 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -564,14 +549,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide4-alignment",
         "label": "Slide 4 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -622,14 +602,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide5-alignment",
         "label": "Slide 5 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -680,14 +655,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide6-alignment",
         "label": "Slide 6 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -738,14 +708,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide7-alignment",
         "label": "Slide 7 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -796,14 +761,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide8-alignment",
         "label": "Slide 8 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -854,14 +814,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide9-alignment",
         "label": "Slide 9 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
@@ -912,14 +867,9 @@
         "max-width": 1200
       },
       {
-        "type": "radio",
+        "type": "text",
         "id": "home-slide10-alignment",
         "label": "Slide 10 image alignment",
-        "options": [
-          { "value": "left", "label": "Align Left" },
-          { "value": "center", "label": "Align Center" },
-          { "value": "right", "label": "Align Right" }
-        ],
         "default": "center"
       },
       {
