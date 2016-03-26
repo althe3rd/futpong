@@ -10,7 +10,8 @@ $('.gallery').flickity({
   cellAlign: 'left',
   contain: true,
   cellSelector: '.gallery-cell',
-  autoPlay: 8000
+  autoPlay: 8000,
+  wrapAround: true
 });
 
 $("ul.videos a, a.videoButtonTrigger").click(function(e) {
@@ -42,7 +43,27 @@ $(".videoCover, .videoOverlay .close, .modalOverlay .close").click(function(e) {
 	$(".videoCover").fadeOut('300');
 });
 
+$(".mobileNavTrigger").click(function(e) {
+	e.preventDefault();
+	
+	$("#mobileNav").addClass("open");
+	$(".mobileNavCover").fadeIn('300');
+});
 
+
+$("#mobileNav a").click(function(e) {
+	//e.preventDefault();
+	
+	$("#mobileNav").removeClass("open");
+	$(".mobileNavCover").fadeOut('300');
+});
+
+$(".mobileNavCover").click(function(e) {
+	e.preventDefault();
+	
+	$("#mobileNav").removeClass("open");
+	$(".mobileNavCover").fadeOut('300');
+});
 
 
 $(window).scroll(function() {

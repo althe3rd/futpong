@@ -48,6 +48,8 @@ src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
   {{ '//cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css' | stylesheet_tag }}
 
   {{ '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Raleway:700,400,200' | stylesheet_tag }}
+
+  {{ '//fonts.googleapis.com/css?family=Open+Sans:400,700,300' | stylesheet_tag }}
   
   <script src="https://use.typekit.net/rmb3klj.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -82,6 +84,8 @@ src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1375602142710939";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="mobileNav"><h2>Menu</h2>{% include 'navigation' %}</div>
 
 {% unless settings.promo_message == blank %}
 	<a href="{{ settings.promo_link }}" class="promoBanner">
@@ -153,6 +157,7 @@ src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
      <h1 class="hidden">{{ shop.name }}</h1>
      {% endif %}
    </div>
+   <a href="#" class="mobileNavTrigger"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
    <div class="navMain">
   {% include 'navigation' %}
    </div>
@@ -228,6 +233,7 @@ src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
     <div class="modalOverlay"><div class="modalOverlayInner"></div><a href="#" class="close"><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path class="ex" d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/><path d="M0 0h48v48h-48z" fill="none"/></svg></a></div>
     <div class="videoOverlay"><div class="videoOverlayInner"></div><a href="#" class="close"><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path class="ex" d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/><path d="M0 0h48v48h-48z" fill="none"/></svg></a></div>
     <div class="videoCover"></div>
+    <div class="mobileNavCover"></div>
 
     {% comment %}Shopify does not support Internet Explorer 6 nor 7. It does encourage themes to support IE8 until the end of 2014.{% endcomment %}
     <!--[if lt IE 8]>
