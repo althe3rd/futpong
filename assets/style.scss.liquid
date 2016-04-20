@@ -844,7 +844,52 @@ footer {
 	position: relative;
 }
 
+a.mobileCart {
+  display: none;
+  position: absolute;
+  top: 27px;
+  right: 70px;
+  z-index:3;
+  border: 1px solid rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.9);
+  border-radius: 3px;
+  padding: 0.25em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  font-size: 0.82em;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+a.mobileCart:hover {
+  border: 1px solid #ed1c24;
+  background: #ed1c24;
+}
+
 .template-page, .template-product, .template-cart, .template-checkout {
+
+  .mobileCart {
+    display: none;
+    position: absolute;
+    top: 27px;
+    right: 70px;
+    z-index:3;
+    border: 1px solid rgba(0,0,0,0.9);
+    color: rgba(0,0,0,0.9);
+    border-radius: 3px;
+    padding: 0.25em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    font-size: 0.82em;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+  }
+
+.mobileCart:hover {
+  border: 1px solid #ed1c24;
+  background: #ed1c24;
+  color: rgba(255,255,255,0.9);
+}
 
   .mobileNavTrigger {
     svg {
@@ -1175,11 +1220,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
       }
 
       p {
-        color: rgba(255,255,255,0.9);
-        text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+        color: rgba(255,255,255,1);
+        text-shadow: 0px 1px 8px rgba(0,0,0,0.7);
         text-transform: uppercase;
         letter-spacing: 0.6px;
-        font-size: 14px;
+        font-size: 15px;
       }
     }
 
@@ -1203,7 +1248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
 	  }
 
       .button-border {
-        display: block;
+        display: none;
         background: rgba(255,255,255,0.1);
         height: 1px;
         margin-top: 20px;
@@ -1214,9 +1259,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', e
     }
 
     .button {
-      display: block;
+      display: inline-block;
       background: rgba(0,0,0,0.4);
-      width: 100%;
+      
+      margin-left: 0.6em;
       border: 1px solid #fff;
       border-radius: 3px;
       font-size: 1.3em;
@@ -2447,6 +2493,14 @@ ul.people {
 	}
 }
 
+.mobileInstructions {
+    display: none;
+    text-align: center;
+    padding: 1em;
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+  }
+
 .contentBlock.nomargin {
 	margin-bottom: 0px;
 }
@@ -2567,11 +2621,16 @@ footer.pageFooter {
 	}
 }
 
+
+
 .modalContentSource {
 	display: none;
 }
 
 @media screen and (max-width: 1200px) {
+
+  
+
 		.promoBanner {
 			span {
 				display: none;
@@ -2584,6 +2643,7 @@ footer.pageFooter {
 }
 
 @media screen and (max-width: 830px) {
+
 	
 	.mainHeader  {
 		
@@ -2659,10 +2719,24 @@ footer.pageFooter {
 			width: 100px;
 			height: 100px;
 		}
+
+   
 }
 
 
 @media screen and (max-width: 480px) {
+
+  .mobileInstructions {
+    display: block;
+  }
+
+  .mobileCart { 
+    display: block !important;
+  }
+
+  .rightCol-cell .button {
+    margin-bottom: 0.4em !important;
+  }
 
   .navMain {
     display: none;
@@ -2670,6 +2744,14 @@ footer.pageFooter {
 
   .gallery .gallery-cell .rightCol-cell {
     top: 36%;
+  }
+
+  .programsLeftCol, .programsRightCol {
+    padding: 0.8em;
+  }
+
+  .flickity-prev-next-button {
+    top: 58% !important;
   }
 
   #logo {
@@ -2680,6 +2762,10 @@ footer.pageFooter {
     svg {
       width: 100%;
     }
+  }
+
+  h2.containerHeading {
+    margin-bottom: 0.6em;
   }
 
   .mobileNavTrigger {
@@ -2729,7 +2815,7 @@ footer.pageFooter {
 	}
 	
 	.prod-image-wrap a {
-			height: 200px;
+			height: 270px;
 		}
 		
 		li.three-per-row {
