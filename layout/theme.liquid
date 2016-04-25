@@ -173,6 +173,11 @@ src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
 
 {% endcase %}
 	
+{% case template %}
+      {% when 'index' %}
+
+  {% include 'whatis' %}
+{% endcase %}
 
   <div class="container grabaset">
 

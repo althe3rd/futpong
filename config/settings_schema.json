@@ -707,7 +707,7 @@
         "label": "Slide 7 image",
         "max-width": 1200
       },
-      {
+      { 
         "type": "text",
         "id": "home-slide7-alignment",
         "label": "Slide 7 image alignment",
