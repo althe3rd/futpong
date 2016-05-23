@@ -23,6 +23,8 @@ fbq('track', "PageView");</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
 /></noscript>
+
+
 <!-- End Facebook Pixel Code --> 
 
   <title>
@@ -95,6 +97,24 @@ src="https://www.facebook.com/tr?id=1719961534914380&ev=PageView&noscript=1"
 
   {{ '//cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js' | script_tag }}
   <script>jQuery('html').removeClass('no-js').addClass('js');</script>
+
+  <script>
+    $( document ).ready(function() {
+      
+      //track add to cart clicks
+      $("#product-add input#add").click(function(e) {
+        fbq('track', 'AddToCart');
+      });
+
+      //Initiate checkout
+      $(".template-cart input#checkout").click(function(e) {
+        fbq('track', 'Initiate Checkout');
+      });
+
+     
+
+    });
+  </script>
 
 </head>
 
